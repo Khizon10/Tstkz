@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="sweetalert2.all.min.js"></script>
+    <meta charset="utf-8">
+    <title>trevo-APIS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Favicon -->
+
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+<!-- Basic stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+ <!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+<style>
+.content{
+  background: #000000 url(https://telegra.ph/file/226e26020fbc0286102cb.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Barlow', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.oii{
+background: rgba(000,000,000 , 0.7);
+}
+.mb-2{
+color: white;
+}
+.im{
+color: white;
+}
+.he{
+color: #07e8d9;
+
+}
+.hg{
+text-align: right;
+}
+
+
+      </style>
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Carregando...</span>
+            </div>
+        </div>
+        <!-- Spinner End-->
+
+
+        <!-- Sidebar aqui -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+
+<br>
+
+<br>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-download"
+                                aria-hidden="true"></i> DOWNLOADER</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/ytmp3?url=https://www.youtube.com/watch?v=7AlAYttGnAg&apikey=clover"
+                                target="_blank">Youtube Audio</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/ytmp4?url=https://www.youtube.com/watch?v=7AlAYttGnAg&apikey=clover"
+                                target="_blank">Youtube Video</a>
+                            <a class="dropdown-item" target="_blank" href="/api/yt/playmp3?query=vmz baka&apikey=clover"
+                                target="_blank">Play MP3</a>
+                                
+                                <a class="dropdown-item" target="_blank" href="/api/yt/play?query=mcpaiva&apikey=clover"
+                                target="_blank">Play MP3</a>
+                                
+                            <a class="dropdown-item" target="_blank" href="/api/yt/playmp4?query=vmz baka&apikey=clover"
+                                target="_blank">Play MP4</a>
+                                
+                                                            <a class="dropdown-item" target="_blank" href="/api/download/ythd?url=https://youtube.com/watch?v=cMTrUCasbss&apikey=clover"
+                                target="_blank">YouTube HD</a>
+                                
+                            <a class="dropdown-item" target="_blank" href="/api/yt/search?query=vmz&apikey=clover"
+                                target="_blank">YT Search</a>
+
+                            <a class="dropdown-item" target="_blank" href="/api/download/tiktok?url=https://vm.tiktok.com/ZMY22YQd8/&apikey=clover"
+                                target="_blank">Tiktok audio/video</a>
+                                
+                                
+                                                          <a class="dropdown-item" target="_blank"
+                                href="/api/download/sticker?query=coreana&apikey=clover"
+                                target="_blank">Pack figu</a>
+
+                          <a class="dropdown-item" target="_blank" href="/api/download/pinterest?query=naruto&apikey=clover"
+                          
+                          
+                                target="_blank">Pinterest</a>
+                                
+
+                          <a class="dropdown-item" target="_blank"
+                                href="/api/download/ig?url=https://www.instagram.com/p/CovGT8ZP6HZ/?igshid=YmMyMTA2M2Y=&apikey=clover"
+                                target="_blank">Instagram</a>
+                                
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-gamepad"></i> JOGOS </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank" href="/api/game/adivinheabandeira?apikey=clover"
+                                target="_blank">Adivinhe a Bandeira 🇧🇷</a>
+                            <a class="dropdown-item" target="_blank" href="/api/game/adivipersonagem?apikey=clover"
+                                target="_blank">Adivinhe o Personagem 👦</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> NSFW </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                      <a class="dropdown-item" target="_blank" href="/api/anime/nsfwloli?apikey=clover" target="_blank" >Nswf loli</a>
+                       <a class="dropdown-item" target="_blank" href="/api/nsfw/ahegao?apikey=clover" target="_blank" >nsfw ahegao</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/ass?apikey=clover" target="_blank" >nsfw ass</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/bdsm?apikey=clover" target="_blank" >Nswf bdsm</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/blowjob?apikey=clover" target="_blank" >nsfw blowjob</a>
+		               <a class="dropdown-item" target="_blank" href="/api/nsfw/cuckold?apikey=clover" target="_blank" >nsfw cuckold</a>
+		               <a class="dropdown-item" target="_blank" href="/api/nsfw/cum?apikey=clover" target="_blank" >nsfw cum</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/ero?apikey=clover" target="_blank" >nsfw ero</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/femdom?apikey=clover" target="_blank" >nsfw femdom</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/foot?apikey=clover" target="_blank" >nsfw foot</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/gangbang?apikey=clover" target="_blank" >nsfw gangbanh</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/glasses?apikey=clover" target="_blank" >nsfw glasses</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/hentai?apikey=clover" target="_blank" >nsfw hentai</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/gifs?apikey=clover" target="_blank" >nsfw gifs</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/jahy?apikey=clover" target="_blank" >nsfw jahy</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/manga?apikey=clover" target="_blank" >nsfw manga</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/masturbation?apikey=clover" target="_blank" >nsfw mstb</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/neko?apikey=clover" target="_blank" >nsfw neko</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/orgy?apikey=clover" target="_blank" >nsfw orgy</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/panties?apikey=clover" target="_blank" >nsfw panties</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/pussy?apikey=clover" target="_blank" >nsfw pussy</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/neko2?apikey=clover" target="_blank" >nsfw neko2</a>
+		                <a class="dropdown-item" target="_blank" href="/api/nsfw/tentacles?apikey=clover" target="_blank" >nsfw tentacles</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/thighs?apikey=clover" target="_blank" >nsfw things</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/yuri?apikey=clover" target="_blank" >nsfw yuri</a>
+                        <a class="dropdown-item" target="_blank" href="/api/nsfw/zettai?apikey=clover" target="_blank" >nsfw zettai</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-file-text" aria-hidden="true"></i> TEXTPRO</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                     <a class="dropdown-item">
+                       <h6 align="center"> 
+                       LOGOS
+                       </h6>
+                     </a>
+                               <a class="dropdown-item" href="/api/textpro/joker?text=trevo&apikey=clover"
+                                target="_blank">Joker</a>
+                                 <a class="dropdown-item" href="/api/textpro/wolf?text=trevo&text2=api&apikey=clover"
+                                target="_blank">Wolf</a>
+                            <a class="dropdown-item" href="/api/textpro/wolf2?text=trevo&text2=api&apikey=clover"
+                                target="_blank">Logo Wolf 2</a>
+                            <a class="dropdown-item" href="/api/textpro/urso?text=trevo&apikey=clover"
+                                target="_blank">Urso</a>
+         
+                            <a class="dropdown-item"
+                                href="/api/textpro/ninjalogo?text=trevo&text2=API&apikey=clover"
+                                target="_blank">Ninja</a>
+                            <a class="dropdown-item" href="/api/textpro/leao?text=trevo&text2=APIz&apikey=clover"
+                                target="_blank">leao</a>
+                       
+                         <a class="dropdown-item"><h6 align="center"> HERÓIS</h6></a>
+                            <a class="dropdown-item" href="/api/textpro/vingadores?text=trevo&text2=API&apikey=clover"
+                                target="_blank">vingadores</a>
+                            <a class="dropdown-item" href="/api/textpro/marvel?text=trevo&text2=API&apikey=clover"
+                                target="_blank">Marvel</a>
+                            <a class="dropdown-item" href="/api/textpro/thor?text=trevo&text2=API&apikey=clover"
+                                target="_blank">Thor</a>
+                            <a class="dropdown-item" href="/api/textpro/capitaoamerica?text=trevo&text2=API&apikey=clover"
+                                target="_blank">Capitão América</a>
+                                <a class="dropdown-item">
+                                  <h6 align="center">ALEATÓRIOS</h6>
+                                       <a class="dropdown-item" href="/api/textpro/pornhub?text=trevo&text2=API&apikey=clover"
+                                target="_blank">PORNHUB</a>
+                            <a class="dropdown-item" href="/api/textpro/holograpic?text=trevo&apikey=clover"
+                                target="_blank">Holograpic</a>
+ 
+                            <a class="dropdown-item" href="/api/textpro/blackpink?text=trevo&apikey=clover"
+                                target="_blank">BlackPink</a>
+                            <a class="dropdown-item" href="/api/textpro/verao?text=trevo&apikey=clover"
+                                target="_blank">Verão</a>
+                           
+                            <a class="dropdown-item" href="/api/textpro/harrypotter?text=trevo&apikey=clover"
+                                target="_blank">Harry Potter</a>
+                            <a class="dropdown-item" href="/api/textpro/1917?text=trevo&apikey=clover"
+                                target="_blank">1917</a>
+                            <a class="dropdown-item" href="/api/textpro/devil?text=trevo&apikey=clover"
+                                target="_blank">Devil</a>
+                            <a class="dropdown-item" href="/api/textpro/thunder2?text=trevo&apikey=clover"
+                                target="_blank">Thunder 2</a>
+                            <a class="dropdown-item" href="/api/textpro/space?text=trevo&text2=API&apikey=clover"
+                                target="_blank">Space</a>
+                                </a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-picture-o" aria-hidden="true"></i></i> WALLPAPER</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/wallpaper/satanic?apikey=clover">Wallpaper
+                                Satanic </a>
+
+                                            
+                        
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/wallpaper/cyberspace?apikey=clover">Wallpaper Cyberspace </a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/wallpaper/gaming?apikey=clover">Wallpaper
+                                Gamer </a>
+
+                            <a class="dropdown-item" target="_blank" href="/api/wallpaper/wallpapertec?apikey=clover">
+                                Wallpaper Tecnológico</a>
+                          
+                            <a class="dropdown-item" target="_blank" href="/api/wallpaper/ppcouple?apikey=clover"
+                                target="_blank">PPcouple</a>
+                       
+
+                            <a class="dropdown-item" target="_blank" href="/api/wallpaper/pubg?apikey=clover"
+                                target="_blank">PUBG</a>
+
+                            <a class="dropdown-item" target="_blank" href="/api/wallpaper/aesthetic?apikey=clover"
+                                target="_blank">Aesthetic</a>
+                            <a class="dropdown-item" target="_blank" href="/api/wallpaper/aesthetic?apikey=clover"
+                                target="_blank">Wallpaper Aesthetic</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/anime?apikey=clover"
+                                target="_blank">Wallpaper Anime</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-film"
+                                aria-hidden="true"></i>ANIMES</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank" href="/api/anime/amv?apikey=clover"
+                                target="_blank">AMV</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/cosplay?apikey=clover"
+                                target="_blank">Cosplay</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/waifu?apikey=clover"
+                                target="_blank">Waifu</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/waifu2?apikey=clover"
+                                target="_blank">Waifu2</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/shota?apikey=clover"
+                                target="_blank">shota</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/loli?apikey=clover"
+                                target="_blank">Loli</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/yotsuba?apikey=clover"
+                                target="_blank">Yotsuba</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/shinomiya?apikey=clover"
+                                target="_blank">Shinomiya</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/yumeko?apikey=clover"
+                                target="_blank">Yumeko</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/tejina?apikey=clover"
+                                target="_blank">Tejina</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/chiho?apikey=clover"
+                                target="_blank">Chiho</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/boruto?apikey=clover"
+                                target="_blank">Boruto</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/kaori?apikey=clover"
+                                target="_blank">Kaori</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/shizuka?apikey=clover"
+                                target="_blank">Shizuka</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/kaga?apikey=clover"
+                                target="_blank">Kaga</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/kotori?apikey=clover"
+                                target="_blank">Kotori</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/mikasa?apikey=clover"
+                                target="_blank">Mikasa</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/akiyama?apikey=clover"
+                                target="_blank">Akiyama</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/gremory?apikey=clover"
+                                target="_blank">Gremory</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/isuzu?apikey=clover"
+                                target="_blank">Isuzu</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/shina?apikey=clover"
+                                target="_blank">Shina</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/kagura?apikey=clover"
+                                target="_blank">Kagura</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/shinka?apikey=clover"
+                                target="_blank">Shinka</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/eba?apikey=clover"
+                                target="_blank">Eba</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/elaina?apikey=clover"
+                                target="_blank">Elaina</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/yuri?apikey=clover"
+                                target="_blank">Yuri</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/erza?apikey=clover"
+                                target="_blank">Erza</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/hinata?apikey=clover"
+                                target="_blank">Hinata</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/minato?apikey=clover"
+                                target="_blank">Minato</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/naruto?apikey=clover"
+                                target="_blank">Naruto</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/sagiri?apikey=clover"
+                                target="_blank">Sagiri</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/nezuko?apikey=clover"
+                                target="_blank">Nezuko</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/rize?apikey=clover"
+                                target="_blank">Rize</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/ana?apikey=clover"
+                                target="_blank">Anna</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/deidara?apikey=clover"
+                                target="_blank">Deidara</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/yuki?apikey=clover"
+                                target="_blank">Yuki</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/ana?apikey=clover"
+                                target="_blank">Anna</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/asuna?apikey=clover"
+                                target="_blank">Asuna</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/ayuzawa?apikey=clover"
+                                target="_blank">Ayuzawa</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/chitoge?apikey=clover"
+                                target="_blank">Chitoge</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/emilia?apikey=clover"
+                                target="_blank">Emilia</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/hestia?apikey=clover"
+                                target="_blank">Hestia</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/inori?apikey=clover"
+                                target="_blank">Inori</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/itachi?apikey=clover"
+                                target="_blank">Itachi</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/madara?apikey=clover"
+                                target="_blank">Madara</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/sakura?apikey=clover"
+                                target="_blank">Sakura</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/sasuke?apikey=clover"
+                                target="_blank">Sasuke</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/tsunade?apikey=clover"
+                                target="_blank">Tsunade</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/onepiece?apikey=clover"
+                                target="_blank">One Piece</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/mobil?apikey=clover"
+                                target="_blank">Mobil</a>
+
+                            <a class="dropdown-item" target="_blank" href="/api/anime/keneki?apikey=clover"
+                                target="_blank">Kaneki</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/megumin?apikey=clover"
+                                target="_blank">Megumin</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/toukachan?apikey=clover"
+                                target="_blank">Toukachan</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/akira?apikey=clover"
+                                target="_blank">Akira</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/itori?apikey=clover"
+                                target="_blank">Itori</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/kurumi?apikey=clover"
+                                target="_blank">Kurumi</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/miku?apikey=clover"
+                                target="_blank">Miku</a>
+                            <a class="dropdown-item" target="_blank" href="/api/anime/pokemon?apikey=clover"
+                                target="_blank">Pokemon</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-film"
+                                aria-hidden="true"></i>RAMDON</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank" href="/api/random/meme?apikey=clover"
+                            target="_blank">Meme</a>
+                            <a class="dropdown-item" target="_blank" href="/api/palavra/conselho?apikey=clover"
+                            target="_blank">Conselhos</a>
+
+                </div>
+        </div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="central">
+                <h3 class="" align="center">Trevo-Api<i class="" align="center"><img src="img/satoru.png" alt="" width="30"
+                            ></i></h3>
+            </div>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notificações</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                    
+<a href="#" class="dropdown-item">
+  
+<h6 class="fw-normal mb-0"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Aproveite 🍀!</h6>
+<small class="im"> 06/02/23 </small></a>
+
+
+            
+                      
+
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    
+                    <!-- <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0"> -->
+                    <!-- <a href="#" class="dropdown-item">My Profile</a> -->
+                    <!-- <a href="#" class="dropdown-item">Settings</a> -->
+                    <!-- <a href="#" class="dropdown-item">Log Out</a> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Footer Start -->
+  
+
+
+            
+            <div class="container-fluid pt-4 px-4" align="center">
+
+
+<div class="ba">
+    <div class="baum">
+    <br>
+      <h6 class="mb-0">
+      informações
+ <div class="testimonial-item text-center"><br>
+    <img class="img-fluid rounded-circle mx-auto mb-4" src="https://telegra.ph/file/e6fd65b2f2122a5905b14.jpg"
+style="width: 100px; height: 100px;">
+    <h5 class="mb-1">DESENVOLVIDO POR:</h5>
+    <p>Clover Mods</p>
+
+    <p>Esse é meu primeiro conjunto de Apis &#128512; <br>Se houver bugs por favor me contate!!
+    </p>
+    <div class="icons-container" align="start">
+    <a href="https://youtube.com/@clovermods/" class="icon">
+    <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://wa.me/557598659570" class="icon">
+    <i class="#" width="10px"></i>
+    </a><br><br>
+    </div>
+</div>
+ </div>
+</div><br>
+
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-street-view faa-ring animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">USÚARIOS</p>
+                                <h6 class="mb-0">1</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-eye faa-tada animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">VISITANTES</p>
+<!-- Código do crachá - Não altere o código -->
+<h6 class="mb-0">
+<b class="hitCounter" href="https://visitorshitcounter.com/" target="_blank" title="Hit counter" data-name="059339c9a1780e2b4d64ac9d58d1b14c|9|external|1|#ff0000|#ffffff|small|s-hit">Contador de acertos</b><script>document.write("<script type='text/javascript' src='https://visitorshitcounter.com/js/hitCounter.js?v="+Date.now()+"'><\/script>");</script>
+</h6>
+<!-- O código do crachá termina aqui -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-key faa-wrench animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">APIKEY</p>
+                                <h6 class="mb-0">clover</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="oii rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-times-circle faa-pulse animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">ERROS</p>
+                                <h6 class="mb-0">0</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+<div class="ba">
+   <div class="baum">
+      <h6 class="mb-0">
+ <h6 class="mb-0">
+<p>~ Novidades ~</p>
+<hr>
+<h6>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Modificações em Tiktok download! <i class="fa fa-excla mation-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 18/02/23 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Conselhos adicionados! <i class="fa fa-exclamati on-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 17/02/23 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i>Instagram download adicionado! <i class="fa fa-exclamation -triangle" aria-hidden="true"></i></h6>
+<small class="im"> 17/02/23 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Pinterest download adicionado! <i class="fa fa-exclamatio n-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 06/02/23 </small>
+</h6>
+<hr>
+<h6 class="fw-normal mb-0"><i class="fa fa-exclam ation-triangle" aria-hidden="true"></i> Tiktok download adicionado! <i class="fa fa-exclamat ion-triangle" aria-hidden="true"></i></h6>
+<small class="im"> 05/02/23 </small>
+</h6>
+
+    </h6>
+  </div>
+</div>
+
+<div class="ba">
+    <div class="baum">
+      <h6 class="mb-0">
+
+<p>© <a href="#">Trevo-APIS</a>, All Right Reserved.</div>
+<div class="col-12 col-sm-6 text-center text-sm-end">Créditos do html <a href="https://htmlcodex.com">HTML Codex</a></p><p>
+<p>Inscreva-se no canal do <a href="https://youtube.com/@clovermods" class="he">Clover Mods</a> e nao perca nenhum video</p>
+<p>
+Apikey grátis aqui em cima ☝️  se quiser uma personalizada fale com o <a href="https://api.whatsapp.com/send?phone=557598659560&text=Oi%20Eu%20gostaria%20de%20criar%20uma%20conta%20so%20seu%20site%20de%20apis%20pra%20bot%20ja%20vou%20mandar%20a%20conta%20e%20a%20senha:" clássico="he">Clover</a>
+</p>
+</p>
+</div>
+</h6>
+</div>
+
+
+
+
+ </div>
+</div><br>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer End -->
+        <!-- Footer End -->
+
+    </div>
+    <!-- Content End -->
+
+
+    <!-- Back to Top -->
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+
+.ba{
+background: rgba(000,000,000 , 0.7);
+border-radius: 5px;
+}
+.ba hr{
+color: white;
+}
+.baum{
+margin: 10px;
+}
+.icons-container{
+
+}
+.bah{
+color: #07e8d9;
+}
+.col-12{
+color: #fff;
+}
+
+        .container:after {
+            background-color:#EB1616
+            content: "";
+            height: 10px;
+            position: absolute;
+            top: 390px;
+            width: 100%;
+        }
+
+        .container:hover {
+            transform: scale(0.54);
+        }
+
+        .container-inner {
+            clip-path: path("M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+                );
+            position: relative;
+            transform-origin: 50%;
+            top: -200px;
+        }
+
+        /*.icon {
+    margin-right: 30px;
+    position: position-fixed;
+  }
+        .fa-whatsapp {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+        .fa-github {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+         .fa-whatsapp {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+       @keyframes flutuacao {
+       0%, 100%{
+         transform: translateY(-0px);
+    }
+        50% {
+        transform: translateY(-10px);
+    } 
+    }
+*/
+        .central {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+        }
+
+        .padding {
+            margin-top: 35px;
+            font-size: medium;
+        }
+
+        h6 {
+            font-family: 'Prompt', sans-serif;
+            /* font-family: 'Roboto', sans-serif; */
+        }
+
+        h3 {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .fa-money {
+
+            color: #089785;
+        }
+  </style>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&family=Roboto:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+    <!-- JavaScript Libraries -->
+<script>
+swal({
+title: 'Bem Vindo(a) ❤️',
+text: 'Trevo-Api',
+imageUrl: 'https://pa1.narvii.com/6810/6ca17ac222220521e1c966cce82a34a52e12f3c4_hq.gif',
+footer: 'Espero que goste',
+imageHeight: 200,
+imageAlt: ':)',
+animation: true
+})
+</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+   <script src="assets/owl-carousel/owl.carousel.js"></script>
+
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+                  </html>

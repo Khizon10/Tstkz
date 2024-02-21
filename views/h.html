@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DarkPan - Bootstrap 5 Admin Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+<style>
+.oii{
+background-color: #708090;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Carregando...</span>
+            </div>
+        </div>
+        <!-- Spinner End-->
+
+
+        <!-- Sidebar aqui -->
+        <div class="sidebar pe-4 pb-3">
+            <nav class="navbar bg-secondary navbar-dark">
+                <a href="index.html" class="navbar-brand mx-4 mb-3">
+
+                </a>
+                <div class="d-flex align-items-center ms-4 mb-4">
+                    <div class="position-relative">
+                    </div>
+                </div>
+                <div class="navbar-nav w-100">
+
+                    <a href="index.html" class="nav-item nav-link active padding"><i
+                            class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-download" aria-hidden="true"></i> DOWNLOADER</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/ytmp4?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY"
+                                target="_blank">Youtube Video</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/ytmp3?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY"
+                                target="_blank">Youtube Audio</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/ytmp32?url=https://youtu.be/6l5V3BWDcMw&apikey=APIKEY"
+                                target="_blank">Youtube Audio2</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/downloader/pinterest?q=aeshestic&apikey=APIKEY" target="_blank">Busca
+                                Pinterest</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/downloader/wallpaperflare?query=anime&apikey=APIKEY" target="_blank">Buscar
+                                Wallpaper</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/googleimg?query=satoru gojo&apikey=APIKEY" target="_blank">Pesquisar
+                                Imagem Google</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/apk?query=minecraft&apikey=APIKEY" target="_blank">Buscar APK</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/apkdl?url=URL_APKPURE&apikey=APIKEY" target="_blank">BAIXAR APK</a>
+                            <a class="dropdown-item" target="_blank" href="/api/yt/playmp3?query=vmz baka&apikey=APIKEY"
+                                target="_blank">Play MP3</a>
+                            <a class="dropdown-item" target="_blank" href="/api/yt/playmp4?query=vmz baka&apikey=APIKEY"
+                                target="_blank">Play MP4</a>
+                            <a class="dropdown-item" target="_blank" href="/api/yt/search?query=vmz&apikey=APIKEY"
+                                target="_blank">YT Search</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/download/tiktok?url=https://vt.tiktok.com/ZSeJ7P56G&apikey=APIKEY"
+                                target="_blank">Tiktokdl (sem marca d'agua</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/downloader/pornhub?query=japan&apikey=APIKEY" target="_blank">Pornhub
+                                search</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/downloader/xnxx?query=japan&apikey=APIKEY" target="_blank">Xnxx search</a>
+                            <a class="dropdown-item" target="_blank"
+                                href="/api/downloader/xvideo?query=japan&apikey=APIKEY" target="_blank">Xvideos
+                                search</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i
+                                class="fa fa-gamepad"></i> JOGOS </a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                            <a class="dropdown-item" target="_blank" href="/api/game/adivinheabandeira?apikey=APIKEY"
+                                target="_blank">Adivinhe a Bandeira 🇧🇷</a>
+                            <a class="dropdown-item" target="_blank" href="/api/game/adivipersonagem?apikey=APIKEY"
+                                target="_blank">Adivinhe o Personagem 👦</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-file-text" aria-hidden="true"></i> TEXTPRO</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                        <a class="dropdown-item" href="/api/textpro/magma?text=Revita&apikey=APIKEY"
+                            target="_blank">Magma</a>
+                        <a class="dropdown-item" href="/api/textpro/hallowen-text?text=Revita&apikey=APIKEY"
+                            target="_blank">Hallowen Effect</a>
+                        <a class="dropdown-item" href="/api/textpro/neon-light?text=Revita&apikey=APIKEY"
+                            target="_blank">Neon Light</a>
+                        <a class="dropdown-item" href="/api/textpro/broken-glass?text=Revita&apikey=APIKEY"
+                            target="_blank">Broken Glass</a>
+                        <a class="dropdown-item" href="/api/textpro/art-papper?text=Revita&apikey=APIKEY"
+                            target="_blank">Art Papper</a>
+                        <a class="dropdown-item" href="/api/textpro/glossy?text=Revita&apikey=APIKEY"
+                            target="_blank">Glossy</a>
+                        <a class="dropdown-item" href="/api/textpro/water-color?text=Revita&apikey=APIKEY"
+                            target="_blank">Water Color</a>
+                        <a class="dropdown-item" href="/api/textpro/multi-color?text=Revita&apikey=APIKEY"
+                            target="_blank">Multi Color</a>
+                        <a class="dropdown-item" href="/api/textpro/neon-devil?text=Revita&apikey=APIKEY"
+                            target="_blank">Neon Devil</a>
+                        <a class="dropdown-item" href="/api/textpro/sky-text?text=Revita&apikey=APIKEY"
+                            target="_blank">Sky Text</a>
+                        <a class="dropdown-item" href="/api/textpro/luxury?text=Revita&apikey=APIKEY"
+                            target="_blank">Luxury</a>
+                        <a class="dropdown-item" href="/api/textpro/vintage?text=Revita&text2=canszz&apikey=APIKEY"
+                            target="_blank">Vintage</a>
+                        <a class="dropdown-item" href="/api/textpro/writing?text=Revita&apikey=APIKEY"
+                            target="_blank">Writing</a>
+                        <a class="dropdown-item" href="/api/textpro/engraved?text=Revita&apikey=APIKEY"
+                            target="_blank">Engraved</a>
+                        <a class="dropdown-item" href="/api/textpro/glue-text?text=Revita&apikey=APIKEY"
+                            target="_blank">Glue Text</a>
+                        <a class="dropdown-item" href="/api/textpro/pornhub?text=Revita&text2=cans&apikey=APIKEY"
+                            target="_blank">Porn HUB</a>
+                        <a class="dropdown-item" href="/api/textpro/holograpic?text=Revita&apikey=APIKEY"
+                            target="_blank">Holograpic</a>
+                        <a class="dropdown-item" href="/api/textpro/deluxe-silver?text=Revita&apikey=APIKEY"
+                            target="_blank">Deluxe Silver</a>
+                        <a class="dropdown-item" href="/api/textpro/fabric?text=Revita&apikey=APIKEY"
+                            target="_blank">Fabric</a>
+                        <a class="dropdown-item" href="/api/textpro/wicker?text=Revita&apikey=APIKEY"
+                            target="_blank">Wicker</a>
+                        <a class="dropdown-item" href="/api/textpro/larva?text=Revita&apikey=APIKEY"
+                            target="_blank">Lava</a>
+                        <a class="dropdown-item" href="/api/textpro/toxic-bokeh?text=Revita&apikey=APIKEY"
+                            target="_blank">Toxic</a>
+                        <a class="dropdown-item" href="/api/textpro/stroberi?text=Revita&apikey=APIKEY"
+                            target="_blank">Strobery</a>
+                        <a class="dropdown-item" href="/api/textpro/koi?text=Revita&apikey=APIKEY"
+                            target="_blank">Peixe</a>
+                        <a class="dropdown-item" href="/api/textpro/bread?text=Revita&apikey=APIKEY"
+                            target="_blank">Pão</a>
+                        <a class="dropdown-item" href="/api/textpro/horor-blood?text=Revita&apikey=APIKEY"
+                            target="_blank">Sangue</a>
+                        <a class="dropdown-item" href="/api/textpro/honey?text=Revita&apikey=APIKEY"
+                            target="_blank">honey</a>
+                        <a class="dropdown-item" href="/api/textpro/ice?text=Revita&apikey=APIKEY"
+                            target="_blank">Ice</a>
+                        <a class="dropdown-item" href="/api/textpro/rusty?text=Revita&apikey=APIKEY"
+                            target="_blank">Rusty Effect</a>
+                        <a class="dropdown-item" href="/api/textpro/captain?text=Revita&text2=cans&apikey=APIKEY"
+                            target="_blank">Capitão América</a>
+                        <a class="dropdown-item" href="/api/textpro/3d-gradient?text=Revita&apikey=APIKEY"
+                            target="_blank">Gradiente</a>
+                        <a class="dropdown-item" href="/api/textpro/christmas?text=Revita&apikey=APIKEY"
+                            target="_blank">Natal</a>
+                        <a class="dropdown-item" href="/api/textpro/drop-water?text=Revita&apikey=APIKEY"
+                            target="_blank">Água</a>
+                        <a class="dropdown-item" href="/api/textpro/black-pink?text=Revita&apikey=APIKEY"
+                            target="_blank">BlackPink</a>
+                        <a class="dropdown-item" href="/api/textpro/logo-wolf?text=Revita&text2&apikey=APIKEY"
+                            target="_blank">Wolf</a>
+                        <a class="dropdown-item" href="/api/textpro/natural-leavest?text=Revita&apikey=APIKEY"
+                            target="_blank">Natural leavest</a>
+                        <a class="dropdown-item" href="/api/textpro/logo-wolf2?text=Revita&text2&apikey=APIKEY"
+                            target="_blank">Logo Wolf 2</a>
+                        <a class="dropdown-item" href="/api/textpro/harry-potter?text=Revita&apikey=APIKEY"
+                            target="_blank">Harry Potter</a>
+                        <a class="dropdown-item" href="/api/textpro/3dstone?text=Revita&apikey=APIKEY"
+                            target="_blank">3D stone</a>
+                        <a class="dropdown-item" href="/api/textpro/1917?text=Revita&apikey=APIKEY"
+                            target="_blank">1917</a>
+                        <a class="dropdown-item" href="/api/textpro/thunder2?text=Revita&apikey=APIKEY"
+                            target="_blank">Thunder 2</a>
+                        <a class="dropdown-item" href="/api/textpro/space?text=Revita&text2=cans&apikey=APIKEY"
+                            target="_blank">Space</a>
+                        <a class="dropdown-item" href="/api/textpro/joker-logo?text=Revita&apikey=APIKEY"
+                            target="_blank">Joker logo</a>
+                        <a class="dropdown-item" href="/api/textpro/hallowen?text=Revita&apikey=APIKEY"
+                            target="_blank">hallowen</a>
+                        <a class="dropdown-item" href="/api/textpro/blood?text=Revita&apikey=APIKEY"
+                            target="_blank">Blood text</a>
+                        <a class="dropdown-item" href="/api/textpro/astone?text=Revita&apikey=APIKEY"
+                            target="_blank">Astone</a>
+                        <a class="dropdown-item" href="/api/textpro/grafity-text?text=Revita&apikey=APIKEY"
+                            target="_blank">Grafity text</a>
+                        <a class="dropdown-item" href="/api/textpro/grafity-text2?text=Revita&text2=cans&apikey=APIKEY"
+                            target="_blank">Grafity text2</a>
+                        <a class="dropdown-item" href="/api/textpro/ninja-logo?text=Revita&text2=canszz&apikey=APIKEY"
+                            target="_blank">Ninja logo</a>
+                        <a class="dropdown-item" href="/api/textpro/lion-logo?text=Revita&text2=cansz&apikey=APIKEY"
+                            target="_blank">lion logo</a>
+                        <a class="dropdown-item" href="/api/textpro/avengers-logo?text=Revita&text2=cans&apikey=APIKEY"
+                            target="_blank">Avengers</a>
+                        <a class="dropdown-item" href="/api/textpro/marvel-logo2?text=Revita&text2=cans"
+                            target="_blank">Marvel studio</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-picture-o" aria-hidden="true"></i></i> WALLPAPER</a>
+                        <div class="dropdown-menu bg-transparent border-0">
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/satanic?apikey=APIKEY">Wallpaper
+                                    Satanic </a>
+        
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/kartun?apikey=APIKEY">Wallpaper
+                                    Cartoon </a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/tatasurya?apikey=APIKEY">Wallpaper
+                                    Planeta </a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="/api/wallpaper/cyberspace?apikey=APIKEY">Wallpaper Cyberspace </a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/gaming?apikey=APIKEY">Wallpaper
+                                    Gamer </a>
+        
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/programing?apikey=APIKEY">
+                                    Wallpaper Programador </a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/teknologi?apikey=APIKEY">
+                                    Wallpaper Tecnologia</a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/mountain?apikey=APIKEY"> Wallpaper
+                                    Montanhas</a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/ppcouple?apikey=APIKEY"
+                                    target="_blank">Random PPcouple</a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/kpop?apikey=APIKEY"
+                                    target="_blank">Random Kpop</a>
+        
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/pubg?apikey=APIKEY"
+                                    target="_blank">Random PUBG</a>
+        
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/aesthetic?apikey=APIKEY"
+                                    target="_blank">Random Aesthetic</a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/Wallpaper?apikey=APIKEY"
+                                    target="_blank">Random Wallpaper Aesthetic</a>
+                                <a class="dropdown-item" target="_blank" href="/api/wallpaper/anime?apikey=APIKEY"
+                                    target="_blank">Random Wallpaper Anime</a>
+                                </div></div>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-film" aria-hidden="true"></i>ANIMES</a>
+                                    <div class="dropdown-menu bg-transparent border-0">
+                                        <a class="dropdown-item" target="_blank" href="/api/random/cosplay?apikey=APIKEY"
+                                        target="_blank">Cosplay</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/waifu?apikey=APIKEY"
+                                        target="_blank">Waifu</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/waifu2?apikey=APIKEY"
+                                        target="_blank">Waifu2</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/shota?apikey=APIKEY"
+                                        target="_blank">shota</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/loli?apikey=APIKEY"
+                                        target="_blank">Loli</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/yotsuba?apikey=APIKEY"
+                                        target="_blank">Random Yotsuba</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/shinomiya?apikey=APIKEY"
+                                        target="_blank">Random Shinomiya</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/yumeko?apikey=APIKEY"
+                                        target="_blank">Random Yumeko</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/tejina?apikey=APIKEY"
+                                        target="_blank">Random Tejina</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/chiho?apikey=APIKEY"
+                                        target="_blank">Random Chiho</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/boruto?apikey=APIKEY"
+                                        target="_blank">Random Boruto</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/kaori?apikey=APIKEY"
+                                        target="_blank">Random Kaori</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/shizuka?apikey=APIKEY"
+                                        target="_blank">Random Shizuka</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/kaga?apikey=APIKEY"
+                                        target="_blank">Random Kaga</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/kotori?apikey=APIKEY"
+                                        target="_blank">Random Kotori</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/mikasa?apikey=APIKEY"
+                                        target="_blank">Random Mikasa</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/akiyama?apikey=APIKEY"
+                                        target="_blank">Random Akiyama</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/gremory?apikey=APIKEY"
+                                        target="_blank">Random Gremory</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/isuzu?apikey=APIKEY"
+                                        target="_blank">Random Isuzu</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/shina?apikey=APIKEY"
+                                        target="_blank">Random Shina</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/kagura?apikey=APIKEY"
+                                        target="_blank">Random Kagura</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/shinka?apikey=APIKEY"
+                                        target="_blank">Random Shinka</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/eba?apikey=APIKEY"
+                                        target="_blank">Random Eba</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/elaina?apikey=APIKEY"
+                                        target="_blank">Random Elaina</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/yuri?apikey=APIKEY"
+                                        target="_blank">Random Yuri</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/erza?apikey=APIKEY"
+                                        target="_blank">Random Erza</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/hinata?apikey=APIKEY"
+                                        target="_blank">Random Hinata</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/minato?apikey=APIKEY"
+                                        target="_blank">Random Minato</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/naruto?apikey=APIKEY"
+                                        target="_blank">Random Naruto</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/sagiri?apikey=APIKEY"
+                                        target="_blank">Random Sagiri</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/nezuko?apikey=APIKEY"
+                                        target="_blank">Random Nezuko</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/rize?apikey=APIKEY"
+                                        target="_blank">Random Rize</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/ana?apikey=APIKEY"
+                                        target="_blank">Random Anna</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/deidara?apikey=APIKEY"
+                                        target="_blank">Random Deidara</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/yuki?apikey=APIKEY"
+                                        target="_blank">Random Yuki</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/ana?apikey=APIKEY"
+                                        target="_blank">Random Anna</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/asuna?apikey=APIKEY"
+                                        target="_blank">Random Asuna</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/ayuzawa?apikey=APIKEY"
+                                        target="_blank">Random Ayuzawa</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/chitoge?apikey=APIKEY"
+                                        target="_blank">Random Chitoge</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/emilia?apikey=APIKEY"
+                                        target="_blank">Random Emilia</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/hestia?apikey=APIKEY"
+                                        target="_blank">Random Hestia</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/inori?apikey=APIKEY"
+                                        target="_blank">Random Inori</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/itachi?apikey=APIKEY"
+                                        target="_blank">Random Itachi</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/madara?apikey=APIKEY"
+                                        target="_blank">Random Madara</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/sakura?apikey=APIKEY"
+                                        target="_blank">Random Sakura</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/sasuke?apikey=APIKEY"
+                                        target="_blank">Random Sasuke</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/tsunade?apikey=APIKEY"
+                                        target="_blank">Random Tsunade</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/onepiece?apikey=APIKEY"
+                                        target="_blank">Random One Piece</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/mobil?apikey=APIKEY"
+                                        target="_blank">Random Mobil</a>
+            
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/keneki?apikey=APIKEY"
+                                        target="_blank">Random Kaneki</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/megumin?apikey=APIKEY"
+                                        target="_blank">Random Megumin</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/toukachan?apikey=APIKEY"
+                                        target="_blank">Random Toukachan</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/akira?apikey=APIKEY"
+                                        target="_blank">Random Akira</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/itori?apikey=APIKEY"
+                                        target="_blank">Random Itori</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/kurumi?apikey=APIKEY"
+                                        target="_blank">Random Kurumi</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/miku?apikey=APIKEY"
+                                        target="_blank">Random Miku</a>
+                                    <a class="dropdown-item" target="_blank" href="/api/wallpaper/pokemon?apikey=APIKEY"
+                                        target="_blank">Random Pokemon</a>
+                                </div>
+                            </div>
+                                    
+                                    
+                                    </div></div>
+                </div>
+        </div>
+        </nav>
+    </div>
+    <!-- Sidebar End -->
+
+
+    <!-- Content Start -->
+    <div class="content">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand bg-secondary navbar-dark sticky-top px-4 py-0">
+            <a href="#" class="sidebar-toggler flex-shrink-0">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="central">
+                <h3 class="" align="center">Satoru<i class="" align="center"><img src="img/satoru.png" alt="" width="30"
+                            hei+></i></h3>
+            </div>
+            <div class="navbar-nav align-items-center ms-auto">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <i class="fa fa-bell me-lg-2"></i>
+                        <span class="d-none d-lg-inline-flex">Notificações</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Novo Estilo!</h6>
+                            <small>5 minutos atrás</small>
+                        </a>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            <h6 class="fw-normal mb-0"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Site Criado!</h6>
+                            <small>12/06/22 </small>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        <img class="rounded-circle me-lg-2"
+                            src="https://64.media.tumblr.com/9c1d74026bb52921106ca79e61737183/5f8a57cbf4d0c6d5-2d/s1280x1920/3a0cf40e4c10924d8f0c9d494a0e3beeb1529fb4.jpg"
+                            alt="" style="width: 40px; height: 40px;">
+                        <span class="d-none d-lg-inline-flex">CONVIDADO</span>
+                    </a>
+                    <!-- <div class="dropdown-menu dropdown-menu-end bg-secondary border-0 rounded-0 rounded-bottom m-0"> -->
+                    <!-- <a href="#" class="dropdown-item">My Profile</a> -->
+                    <!-- <a href="#" class="dropdown-item">Settings</a> -->
+                    <!-- <a href="#" class="dropdown-item">Log Out</a> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Footer Start -->
+      
+        <div class="container-fluid pt-4 px-4" align="center" width="279">
+            
+             <div class="col-sm-12 col-xl-6">
+                <div class="bg-secondary rounded h-100 p-4">
+                    <h6 class="mb-4" align="start">Sobre <i class="fa fa-info-circle" aria-hidden="true"></i></h6>
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item text-center">
+                            <img class="img-fluid rounded-circle mx-auto mb-4" src="img/icon.jpg" style="width: 100px; height: 100px;">
+                            <h5 class="mb-1">DESENVOLVIDO POR:</h5>
+                            <p>Brunoww</p>
+               
+                            <p>Esse é um conjunto de Apis gratuito &#128512; <br>Se houver bugs por favor me contate!!</p>
+                            <div class="icons-container" align="start">
+                                <a href="https://github.com/bruno918/" class="icon">
+                                     <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://instagram.com/b_r_u_n_o76" class="icon">
+                                     <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/5555933005901" class="icon">
+                                     <i class="fab fa-whatsapp" width="10px"></i>
+                                </a>
+                                
+                                                       
+                           </div>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            
+                            <h5 class="mb-1">Extras</h5>
+                            <h6> Faça uma doação</h6>
+                           <p> Além de ajudar a manter o projeto Open Source, você poderá deixar qualquer mensagem no site!!
+                        </p>
+                            <a href="https://picpay.me/bruno.leal223" class="btn btn-primary btn-sm mr-2" target="_blank"><i class="fa fa-money" aria-hidden="true"></i></a>
+                            <h6>Agradecimentos:</h6>
+                            <p class="mb-0">Obrigado <a href="https://github.com/inirey/dashadmin"> Reysekha</a> por ceder a base <br> Layout base by <a href="https://htmlcodex.com">HTML Codex</a> e editado por mim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid pt-4 px-4" align="center">
+                <div class="row g-4">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-street-view faa-ring animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">USÚARIOS</p>
+                                <h6 class="mb-0">1</h6>
+                            </div>
+                        </div>
+                    </div>
+             <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-eye faa-tada animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">VISITANTES</p>
+                                <h6 class="mb-0">1</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content-between p-4">
+                            <i class="fa fa-key faa-wrench animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">APIKEY</p>
+                                <h6 class="mb-0">satoru</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="bg-light rounded d-flex align-items-center justify-content p-4">
+                            <i class="fa fa-times-circle faa-pulse animated fa-3x text-primary"></i>
+                            <div class="ms-3">
+                                <p class="mb-2">ERROS</p>
+                                <h6 class="mb-0">1</h6>
+                            </div>
+                        </div>
+                    </div>
+              
+                 
+                 </div>
+            </div>
+            <div class="bg-secondary rounded-top p-4" style="margin-top: 30px;">
+                <div class="row">
+                    <div class="col-12 col-sm-6 text-center text-sm-start">
+                        &copy; <a href="#">SATORU-APIS</a>, All Right Reserved.
+                    </div>
+                    <div class="col-12 col-sm-6 text-center text-sm-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->        <!-- Footer End -->
+  
+    </div>
+    <!-- Content End -->
+
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+
+
+
+.container:after {
+  background-color: black;
+  content: "";
+  height: 10px;
+  position: absolute;
+  top: 390px;
+  width: 100%;
+}
+.container:hover {
+  transform: scale(0.54);
+}
+.container-inner {
+  clip-path: path(
+    "M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z"
+  );
+  position: relative;
+  transform-origin: 50%;
+  top: -200px;
+}
+
+  /*.icon {
+    margin-right: 30px;
+    position: position-fixed;
+  }
+        .fa-whatsapp {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+        .fa-github {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+         .fa-whatsapp {
+            animation: flutuacao 3s ease-in-out infinite;
+        }
+       @keyframes flutuacao {
+       0%, 100%{
+         transform: translateY(-0px);
+    }
+        50% {
+        transform: translateY(-10px);
+    } 
+    }
+*/
+       .col-sm-6 col-xl-3 {
+       background-color: black;
+       }
+        .central {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 30px;
+        }
+
+        .padding {
+            margin-top: 35px;
+            font-size: medium;
+        }
+
+        h4 {
+            font-family: 'Prompt', sans-serif;
+/* font-family: 'Roboto', sans-serif; */
+        }
+        h3 {
+            font-family: 'Prompt', sans-serif;
+        }
+        .fa-money {
+
+color: #089785;
+        }
+    </style>
+    <!-- fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,100&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,300&family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/chart/chart.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script>
+     
+        </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
